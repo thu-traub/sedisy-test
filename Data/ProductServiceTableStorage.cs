@@ -30,6 +30,10 @@ public class ProductServiceTableStorage : IProductService
             logger.LogError("Table URI is null");
             return new List<Product>();
         }
+        if (cred == null) {
+            logger.LogError("Credential is null");
+            return new List<Product>();
+        }
         TableClient cl = new TableClient(new Uri(tableuri),"Products", cred);
         Azure.Pageable<Product> r = cl.Query<Product>();
         return r.ToList();
