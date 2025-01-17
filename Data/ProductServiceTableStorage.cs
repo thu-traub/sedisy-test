@@ -22,8 +22,8 @@ public class ProductServiceTableStorage : IProductService
         //     return new List<Product>();
         // }
         // TableClient cl = new TableClient(cs, "Products");
-        //DefaultAzureCredential cred = new DefaultAzureCredential();
-        AzureCliCredential cred = new AzureCliCredential();
+        DefaultAzureCredential cred = new DefaultAzureCredential();
+        //AzureCliCredential cred = new AzureCliCredential();
         string? tableuri = configuration["TableURI"];
         if (tableuri == null)
         {
