@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>sedisy_app</RootNamespace>
+    <UserSecretsId>69b8fe4a-ba2d-4401-89b8-10b953b5509b</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" Version="12.10.0" />
+    <PackageReference Include="Azure.Identity" Version="1.13.2" />
+  </ItemGroup>
+
+</Project>
